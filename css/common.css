@@ -1,0 +1,279 @@
+@charset "utf-8";
+/*@import url('font.css');*/
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700');
+
+/*익스플로워 글씨체*/
+@font-face { 
+  font-family: 'Noto Sans KR'; 
+  font-style: normal; 
+  font-weight: 100; 
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff2) format('woff2'), 
+      url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff) format('woff'), 
+      url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.otf) format('opentype'); 
+} 
+@font-face { 
+  font-family: 'Noto Sans KR'; 
+  font-style: normal; 
+  font-weight: 300; 
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff2) format('woff2'), 
+      url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff) format('woff'), 
+      url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.otf) format('opentype'); 
+} 
+@font-face { 
+  font-family: 'Noto Sans KR'; 
+  font-style: normal; 
+  font-weight: 400; 
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2) format('woff2'), 
+        url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff) format('woff'), 
+        url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf) format('opentype'); 
+ } 
+@font-face { 
+  font-family: 'Noto Sans KR'; 
+  font-style: normal; 
+  font-weight: 500; 
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff2) format('woff2'), 
+        url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff) format('woff'), 
+        url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.otf) format('opentype'); 
+ } 
+@font-face { 
+  font-family: 'Noto Sans KR'; 
+  font-style: normal; 
+  font-weight: 700; 
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff2) format('woff2'), 
+        url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff) format('woff'), 
+        url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.otf) format('opentype'); 
+ } 
+@font-face { 
+  font-family: 'Noto Sans KR'; 
+  font-style: normal; 
+  font-weight: 900; 
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff2) format('woff2'), 
+        url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff) format('woff'), 
+        url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.otf) format('opentype'); 
+ }
+
+/* Reset */
+html {overflow-y:scroll}
+body {margin:0;padding:0;height:100%;}
+header ul, nav ul, footer ul {margin:0;padding:0;list-style:none}
+table {border-collapse: collapse;}
+legend, caption, .blind {position:absolute;font-size:0;line-height:0;text-indent:-9999em;overflow:hidden}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display:block}
+label, input, button, select, img {vertical-align:middle}
+input, button {margin:0;padding:0;border: none;background: none;outline: none;}
+button,input[type=submit]{cursor:pointer;}
+textarea{resize: none;}
+textarea {border-radius:0;-webkit-appearance:none}
+p {margin:0;padding:0;word-break:break-all}
+a, a:link, a:visited {color:inherit;text-decoration:none}
+pre {overflow-x:scroll;font-size:1.1em}
+ul,ol,li{list-style:none;padding:0;margin:0;}
+input, textarea, select {outline: none}
+.clear {clear:both}
+.fl { float: left; }
+.fr { float: right; }
+
+.half_fix{position: fixed; right:15px;bottom: 25px;height: 50px;line-height: 50px; width: 44.5% !important; background: #ff8228; color:#fff !important;font-size: 17px;border-radius: 5px;text-align: center; display: block;}
+
+.half_fix2{position: fixed; left:15px;  bottom: 25px;height: 50px !important; line-height: 50px;width: 44.5% !important; border:1px solid #ff8228;background: #fff; color:#fbbb18;font-size: 17px;border-radius: 5px;text-align: center; display: block;box-sizing: border-box;}
+.half_fix:visited{color:#fff;}
+.half_fix2:visited{color:#ff8228;}
+
+/* 여백 초기화 */
+body,div,ul,li,dl,dd,dt,ol,h1,h2,h3,h4,h5,h6,input,fieldset,legend,p,select,table,th,td,tr,textarea,button,form,figure,figcaption{margin:0; padding:0;}
+
+/* 제목 태그 초기화 */
+h1,h2,h3,h4,h5,h6 {font-weight: normal;}
+
+/* 폰트 스타일 초기화 */
+em,address {font-style: normal;}
+
+/* 테두리 초기화 */
+img,fieldset {border:0 none;}
+
+/* 버튼 초기화 */
+button {border: 0;}
+
+/* 반응형 */
+/*video,img {width: 100%;}*/
+video {width: 100%;}
+
+/* clearfix */
+.clearfix{*zoom:1;}
+.clearfix:before, .clearfix:after {display: block; content: '';line-height: 0;}
+.clearfix:after {clear: both;}
+
+/* IR 효과 */
+.ir_pm {display:block; overflow:hidden; font-size:0; line-height:0; text-indent:-9999px;} 
+.ir_wa {display:block; overflow:hidden; position:relative; z-index:-1; width:100%; height: 100%;} 
+.ir_so {overflow: hidden; position:absolute; width:0; height:0; line-height:0; text-indent:-9999px;} 
+
+option{text-align: center;}
+
+/* input style */
+input {background-image: none;}
+button{border-radius:0;-webkit-appearance:none}
+input[type=button],
+input[type=reset],
+input[type=text],
+input[type=password],
+input[type=submit],
+input[type=search],
+input[type=tel],
+input[type=email],
+input[type=date]{
+    -webkit-appearance: none;
+     -webkit-border-radius: 0
+}
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+input:checked[type=checkbox] {
+     -webkit-background-color: #666;
+    -webkit-appearance: checkbox
+}
+
+/*사파리 버튼 초기화*/
+input[type="text"], input[type="password"], input[type="button"], input[type="submit"],input[type="url"] ,input[type="search"],textarea { -webkit-appearance: none; -webkit-border-radius: 0; }
+
+
+/*input[type=date]*/
+input[type=date]{-webkit-appearance: none;-moz-appearance: none;appearance: none;}
+input[type=date]::-webkit-outer-spin-button,
+input[type=date]::-webkit-inner-spin-button
+{-webkit-appearance: none; appearance: none;}
+
+/*select*/
+select{-webkit-appearance: none;-moz-appearance: none;appearance: none;background-image: url(../img/arrow-down.png);background-repeat: no-repeat;background-position: 90% 50%;background-size: 8px auto;background-color: #fff;border:none;width: 100%;} 
+
+
+/*select IE10,11의 네이티브 화살표 숨기기*/
+select::-ms-expand{display: none;}
+
+/*placeholder*/
+input::-ms-input-placeholder { font-weight: 400; color: #ccc; font-size: 14px;font-family: 'Noto Sans KR', sans-serif !important;}
+input::-webkit-input-placeholder { font-weight: 400; color: #ccc;font-size: 14px; font-family: 'Noto Sans KR', sans-serif !important;} 
+input::-moz-placeholder { font-weight: 400; color: #ccc;font-size: 14px;font-family: 'Noto Sans KR', sans-serif !important;}
+input::-o-placeholder { font-weight: 400; color: #ccc;font-size: 14px;font-family: 'Noto Sans KR', sans-serif !important;}
+
+
+textarea::-o-placeholder { font-weight: 400; color: #aaa;font-size: 14px;font-family: 'Noto Sans KR', sans-serif !important;}
+textarea::-ms-input-placeholder { font-weight: 400; color: #aaa; font-size: 14px;font-family: 'Noto Sans KR', sans-serif !important;}
+textarea::-webkit-input-placeholder { font-weight: 400; color: #aaa;font-size: 14px;font-family: 'Noto Sans KR', sans-serif !important; } 
+textarea::-moz-placeholder { font-weight: 400; color: #aaa;font-size: 14px; font-family: 'Noto Sans KR', sans-serif !important;}
+
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder { /* WebKit browsers */
+  font-weight: 400; color: #aaa; font-size: 14px;font-family: 'Noto Sans KR', sans-serif !important;
+}
+ 
+input:focus:-moz-placeholder,
+textarea:focus:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+ font-weight: 400; color: #aaa; font-size: 14px;font-family: 'Noto Sans KR', sans-serif !important;
+}
+ 
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder { /* Mozilla Firefox 19+ */
+  font-weight: 400; color: #aaa; font-size: 14px;font-family: 'Noto Sans KR', sans-serif !important;
+}
+ 
+input:focus:-ms-input-placeholder,
+textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */
+ font-weight: 400; color: #aaa; font-size: 14px;font-family: 'Noto Sans KR', sans-serif !important; }
+
+
+/*input[type="text"]::placeholder{font-size: 17px;position: absolute;bottom:0;}*/
+/*input[type=button],*/
+/*input[type=reset],*/
+/*
+input[type=text]::placeholder{font-size: 17px;}
+input[type=password]::placeholder{font-size: 17px;}
+*/
+/*input[type=submit],*/
+/*
+input[type=search]::placeholder{font-size: 17px;}
+input[type=tel]::placeholder{font-size: 17px;}
+input[type=email]::placeholder{font-size: 17px;}
+input[type=url]::placeholder{font-size: 17px;}
+*/
+
+.dbd{display: block}
+
+/*footer 버튼*/
+.fix_a{position: fixed; left: 0; right: 0; bottom: 25px;width: 91.6% !important;height: 50px;margin: 0 auto;z-index: 10000;}
+.fix { width: 100%;height: 100%;   background: #ff8228; color:#fff;font-size: 17px;border-radius: 5px;}
+.fix2{ position: fixed; left: 0; right: 0; bottom: 45px; width: 91.6% !important; margin: 0 auto;}
+
+/*a 링크값*/
+.full{display:block; width:100%; height:100%;}
+
+/*91.6%*/
+.inner{width: 100%; padding: 0 16px; margin:0 auto; box-sizing: border-box; overflow: hidden;}
+.inner2 {width:88%; margin:0 auto;}
+
+/*상단 50*/
+.inner_h{padding:45px 0 55px; box-sizing: border-box; }
+.inner_box{padding-top: 45px; box-sizing: border-box;}
+.inner_box3{padding-top: 80px; box-sizing: border-box;}
+
+/*하단 50*/
+.inner_box1{padding-bottom: 60px; box-sizing: border-box;}
+.inner_box2{padding-bottom: 80px; box-sizing: border-box;}
+.inner_box2_{padding-bottom: 100px; box-sizing: border-box;}
+.inner_box4{padding-bottom: 150px; box-sizing: border-box;}
+
+
+
+/*input 값 없는 애들 padding 하기*/
+.p_inner{padding: 20px 15px 15px; box-sizing: border-box;}
+
+
+/*부모 자식 설정*/
+.posr{position: relative;}
+.posa{position: absolute;}
+.middle{position: absolute;top: 0;right: 0;bottom: 0;left: 0;margin: auto;text-align: center; }
+
+
+/*세로 가운데 맞추기*/
+.y{position: absolute;top:50%;transform: translateY(-50%);-webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); -o-transform: translateY(-50%);}
+
+
+/*가로세로 가운데 맞추기*/
+.xy{position: absolute;top:50%;left: 50%;transform: translate(-50%,-50%);-webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%);}
+
+.p_10{padding: 0 10px;box-sizing: border-box;}
+
+.hd_fix{position: fixed;width: 100%;background: #fff; top:0;z-index: 10000;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
